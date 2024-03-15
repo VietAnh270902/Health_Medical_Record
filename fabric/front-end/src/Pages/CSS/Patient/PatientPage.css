@@ -1,0 +1,303 @@
+/* Header.css */
+
+.header {
+background-color: green;
+display: flex;
+justify-content: space-between; /* Add space between elements */
+padding: 10px 20px; /* Add padding to the header */
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+
+.dropdown a {
+text-decoration: none;
+color: white;
+font-size: 18px; /* Set a common font size for all dropdown items */
+padding: 15px; /* Adjust padding for better spacing */
+display: inline-block;
+width: 120px; /* Set a fixed width for the dropdown link */
+text-align: center; /* Center align text */
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #555;
+width: 165px; /* Set width for dropdown content */
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content a {
+color: white;
+padding: 12px; /* Adjust padding for better spacing */
+display: block;
+text-decoration: none;
+}
+
+.dropdown-content a:hover {
+background-color: #666;
+}
+
+.welcome-message {
+color: white;
+margin-left: 250px; /* This will push the welcome message to the rightmost side of the header */
+margin-top: 25px;
+}
+
+/* Body.css */
+
+.body {
+padding: 20px;
+}
+
+.slider {
+position: relative;
+overflow: hidden;
+width: 100%;
+margin: 0 auto;
+}
+
+.slide {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%; /* Set the width to 100% */
+height: 550px; /* Adjust the height as needed */
+transition: transform 0.3s ease-in-out;
+background-size: cover; /* Ensure the image covers the entire space */
+background-position: center; /* Center the background image */
+}
+
+.slide img {
+width: 100%; /* Ensure the image takes up 100% width of its container */
+height: auto; /* Maintain the aspect ratio */
+}
+
+/* Add this to your existing CSS file or create a new one */
+.additional-content {
+text-align: center;
+margin-top: 20px;
+padding: 20px;
+background-color: #f4f4f4;
+}
+
+.additional-content h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.additional-content p {
+font-size: 16px;
+color: #555;
+}
+
+.card-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+.card {
+width: 30%; /* Adjust as needed */
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.card img {
+width: 100%;
+height: 300px;
+border-radius: 8px 8px 0 0;
+}
+
+.card-text {
+padding: 15px;
+}
+
+.card-text h3 {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.card-text p {
+font-size: 14px;
+color: #777;
+}
+
+.cta-button {
+display: block;
+width: 80%;
+margin: 10px auto;
+padding: 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+background-color: #0056b3;
+}
+  
+
+.card:hover {
+transform: scale(1.05); /* Enlarge on hover */
+transition: transform 0.3s; /* Add smooth hover effect */
+}
+
+.arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+font-size: 24px;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+border: none;
+cursor: pointer;
+}
+
+.left-arrow {
+left: 10px;
+}
+
+.right-arrow {
+right: 10px;
+}
+
+.review-section {
+padding: 20px;
+}
+
+.review-cards {
+display: flex;
+flex-direction: column; /* Display reviews in a column */
+gap: 20px;
+}
+
+.review-card {
+background-color: #ffffff; /* Set background color to white */
+border-radius: 15px;
+overflow: hidden;
+width: 100%; /* Each review occupies the entire width of the container */
+border: 1px solid #e0e0e0; /* Add a border to create a cover around the review */
+cursor: pointer;
+}
+
+.review-card:hover {
+transform: scale(1.05); /* Enlarge on hover */
+transition: transform 0.3s; /* Add smooth hover effect */
+}
+
+.review-content {
+display: flex;
+}
+
+.doctor-image {
+min-width: 80px; /* Adjust the image size */
+height: 80px;
+padding-top: 20px;
+}
+
+.review-details {
+padding: 15px;
+}
+
+.doctor-name {
+display: block;
+font-weight: bold;
+}
+
+.review-text {
+margin-top: 10px; /* Add margin between the name and review text */
+}
+  
+.footer {
+background-color: #333;
+color: white;
+padding: 20px;
+display: flex;
+justify-content: space-around;
+}
+
+.section {
+flex: 1;
+margin-right: 20px;
+}
+
+.section h3 {
+font-size: 18px;
+}
+
+.section p {
+margin: 0;
+font-size: 14px;
+}
+  
+.log-out {
+margin-left: auto; /* This will push the log-out button to the rightmost side of the header */
+padding: 15px;
+}
+
+.btn-log-out {
+background-color: red; /* Choose your desired background color */
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+}
+
+.btn-log-out:hover {
+background-color: darkred; /* Change the color on hover if desired */
+}
+
+.log-out-link{
+text-decoration: none;
+color: white;
+}
+
+.dropdown-link {
+text-decoration: none;
+color: white;
+font-size: 20px;
+padding: 15px;
+display: inline-block;
+}
+
+.dropdown-link:hover {
+background-color: #666;
+}
+  
+
+    
+
+  
+
+  
+
+
+
+
+  
+  
+
+  
+
+
+
+
+  

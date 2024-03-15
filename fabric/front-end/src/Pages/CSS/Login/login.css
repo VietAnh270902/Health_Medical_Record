@@ -1,0 +1,59 @@
+/* Apply background styling to the login page */
+.login-page {
+    position: relative;
+}
+
+/* Add a background div and style it */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../Images/doctorWallpaper.jpg') center center fixed;
+    background-size: cover;
+    z-index: -1; /* Ensure it stays behind other elements */
+}
+
+/* Styles for the container within the login page */
+.login-page .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 100px;
+    max-height: 400px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container div {
+    margin-bottom: 15px;
+}
+
+.container label,
+.container input,
+.container select {
+    font-size: 18px;
+}
+
+.container button {
+    margin-top: 15px;
+    width: 120px;
+}
+
+.error {
+    color: red;
+    margin-top: 15px;
+}
+
+
+  
+
+  
+  

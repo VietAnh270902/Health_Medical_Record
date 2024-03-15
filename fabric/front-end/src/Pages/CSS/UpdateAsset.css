@@ -1,0 +1,80 @@
+.update-asset-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+flex-direction: column; /* Center items vertically in a column */
+}
+
+.update-asset-form {
+border: 2px solid #ccc;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 800px; /* Increased width for the two-column layout */
+text-align: center; /* Center the form contents horizontally */
+margin-top: 20px; /* Add some space between the form and the heading */
+display: flex; /* Enable flexbox layout */
+flex-wrap: wrap; /* Allow items to wrap to the next line */
+justify-content: space-between; /* Space between form groups */
+}
+
+.form-group {
+width: 48%; /* 48% width for each form group */
+margin: 10px 0;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 5px;
+text-align: left; /* Left-align the label text */
+}
+
+.form-group input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form-group-for-notes {
+width: 100%; /* 48% width for each form group */
+margin: 10px 0;
+}
+
+.form-group-for-notes label {
+display: block;
+margin-bottom: 5px;
+text-align: left;
+}
+
+.form-group-for-notes input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.update-asset-button {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-align: center; /* Center the button text horizontally */
+width: 175px; /* Make the button full-width */
+font-size: medium;
+margin: 0 auto; /* Center the button horizontally */
+display: block; /* Ensure it takes full width */
+}
+
+.update-asset-button:hover {
+background-color: #0056b3;
+}
+
+.update-status-message {
+text-align: center;
+margin-top: 10px;
+}
+  
